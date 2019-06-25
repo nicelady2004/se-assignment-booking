@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="accommodations" prefHeight="200.0" prefWidth="649.0">
+            <columns>
+                <TableColumn fx:id="housingCategory" prefWidth="100.0" text="Housing Category"/>
+                <TableColumn fx:id="address" prefWidth="100.0" text="Address"/>
+                <TableColumn fx:id="town" prefWidth="100.0" text="Town"/>
+                <TableColumn fx:id="county" prefWidth="100.0" text="County"/>
+                <TableColumn fx:id="country" prefWidth="100.0" text="Country"/>
+                <TableColumn fx:id="phone" prefWidth="100.0" text="Phone"/>
+                <TableColumn fx:id="manager" prefWidth="100.0" text="Manager"/>
+                <TableColumn fx:id="zipCode" prefWidth="100.0" text="ZIP Code"/>
+            </columns>
+        </TableView>
+        <TableView fx:id="rooms" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="roomType" prefWidth="100.0" text="Room Type"/>
+                <TableColumn fx:id="price" prefWidth="100.0" text="Price Per Night"/>
+            </columns>
+        </TableView>
+        <FlowPane hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0">
+            <children>
+                <TextField promptText="First Name"/>
+                <TextField layoutX="10.0" layoutY="10.0" promptText="Last Name"/>
+                <TextField layoutX="10.0" layoutY="47.0" promptText="Email"/>
+                <TextField layoutX="364.0" layoutY="10.0" promptText="Address"/>
+                <TextField layoutX="10.0" layoutY="47.0" promptText="Town"/>
+                <TextField layoutX="187.0" layoutY="47.0" promptText="County"/>
+                <TextField layoutX="364.0" layoutY="47.0" promptText="Country"/>
+                <TextField layoutX="10.0" layoutY="84.0" promptText="Phone"/>
+                <TextField layoutX="10.0" layoutY="121.0" promptText="ZIP Code"/>
+                <DatePicker promptText="Check-In Date"/>
+                <DatePicker promptText="Check-Out Date"/>
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+        </FlowPane>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+                <Button mnemonicParsing="false" text="Create Reservation"/>
+            </buttons>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+        </ButtonBar>
+        <TableView prefHeight="200.0" prefWidth="823.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="First Name"/>
+                <TableColumn prefWidth="75.0" text="Last Name"/>
+                <TableColumn prefWidth="75.0" text="Check-In Date"/>
+                <TableColumn prefWidth="75.0" text="Check-Out Date"/>
+                <TableColumn prefWidth="75.0" text="Housing Category"/>
+                <TableColumn prefWidth="75.0" text="Address"/>
+                <TableColumn prefWidth="75.0" text="Room Type"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>
